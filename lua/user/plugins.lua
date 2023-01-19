@@ -24,13 +24,18 @@ lazy.setup({
   , { "akinsho/toggleterm.nvim" , event = "VeryLazy"}
   , { "ahmedkhalf/project.nvim" , event = "VeryLazy"}
   , { "lewis6991/impatient.nvim" , event = "VeryLazy"}
-  , { "lukas-reineke/indent-blankline.nvim" }
+  , { "lukas-reineke/indent-blankline.nvim" , event = "VeryLazy"}
   , { "goolord/alpha-nvim" }
-	, {"folke/which-key.nvim", event = "VeryLazy"}
+	, {"folke/which-key.nvim",
+      config = function()
+        vim.o.timeout = true
+        vim.o.timeoutlen = 600
+    end,
+  }
 
 	-- Colorschemes
-  , { "folke/tokyonight.nvim" }
-  , { "lunarvim/darkplus.nvim"}
+  , { "folke/tokyonight.nvim"  , event = "VeryLazy"}
+  , { "lunarvim/darkplus.nvim" , event = "VeryLazy"}
 
 	-- Cmp 
   , { "hrsh7th/nvim-cmp" , event = "VeryLazy"} -- The completion plugin
@@ -61,5 +66,23 @@ lazy.setup({
 	, { "lewis6991/gitsigns.nvim" , event = "VeryLazy"}
 -- dasein
   ,{ "dstein64/vim-startuptime"},
-
+  { "epwalsh/obsidian.nvim"},
+  {
+        "nvim-neorg/neorg",
+        build = ":Neorg sync-parsers",
+        opts = {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.norg.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/notes",
+                        },
+                    },
+                },
+            },
+        },
+        dependencies = { { "nvim-lua/plenary.nvim" } },
+    },
 })
