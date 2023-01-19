@@ -17,7 +17,7 @@ lazy.setup({
   , { "numToStr/Comment.nvim", event = "VeryLazy" }
   , { "JoosepAlviste/nvim-ts-context-commentstring" , event = "VeryLazy"}
   , { "kyazdani42/nvim-web-devicons" , event = "VeryLazy"}
-  , { "kyazdani42/nvim-tree.lua" , event = "VeryLazy"}
+  , { "kyazdani42/nvim-tree.lua"}
   , { "akinsho/bufferline.nvim" , event = "VeryLazy"}
 	, { "moll/vim-bbye" , event = "VeryLazy"}
   , { "nvim-lualine/lualine.nvim" , event = "VeryLazy"}
@@ -65,6 +65,7 @@ lazy.setup({
 	-- Git
 	, { "lewis6991/gitsigns.nvim" , event = "VeryLazy"}
 -- dasein
+  ,{'simrat39/symbols-outline.nvim'}
   ,{ "dstein64/vim-startuptime"},
   { "epwalsh/obsidian.nvim"},
   {

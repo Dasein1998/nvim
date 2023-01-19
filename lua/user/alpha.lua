@@ -20,6 +20,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+  dashboard.button("o", "Obsidian",":ObsidianSearch <CR>"),
 }
 
 local function footer()
