@@ -20,3 +20,4 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.obsidian"
+require('leap').add_default_mappings()
