@@ -88,5 +88,6 @@ lazy.setup({
         },
         dependencies = { { "nvim-lua/plenary.nvim" } },
      event = "VeryLazy"},
-  {"TimUntersberger/neogit", event = "VeryLazy"}
+  {"TimUntersberger/neogit", event = "VeryLazy"},
+  {"mrjones2014/legendary.nvim", event = "VeryLazy"}
 })

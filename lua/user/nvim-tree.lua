@@ -62,7 +62,7 @@ nvim_tree.setup {
       renderer = {
         add_trailing = false,
         group_empty = false,
-        highlight_git = false,
+        highlight_git = true,
         full_name = false,
         highlight_opened_files = "none",
         highlight_modified = "none",
@@ -171,7 +171,7 @@ nvim_tree.setup {
         timeout = 400,
       },
       modified = {
-        enable = false,
+        enable = true,
         show_on_dirs = true,
         show_on_open_dirs = true,
       },
