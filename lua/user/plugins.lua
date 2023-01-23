@@ -65,11 +65,12 @@ lazy.setup({
 	-- Git
 	, { "lewis6991/gitsigns.nvim" , event = "VeryLazy"}
 -- dasein
-  ,{'simrat39/symbols-outline.nvim'}
-  ,{ "dstein64/vim-startuptime"},
-  { "epwalsh/obsidian.nvim"},
-  { "lervag/vimtex"},
-  {"ggandor/leap.nvim"},
+  ,{'simrat39/symbols-outline.nvim', event = "VeryLazy"}
+  ,{ "dstein64/vim-startuptime", event = "VeryLazy"},
+  { "epwalsh/obsidian.nvim", event = "VeryLazy"},
+  { "lervag/vimtex", event = "VeryLazy"},
+  {"ggandor/leap.nvim", event = "VeryLazy"},
+ {"stevearc/oil.nvim", event = "VeryLazy"},
   {"nvim-neorg/neorg",
       build = ":Neorg sync-parsers",
       opts = {
@@ -86,5 +87,6 @@ lazy.setup({
             },
         },
         dependencies = { { "nvim-lua/plenary.nvim" } },
-    },
+     event = "VeryLazy"},
+  {"TimUntersberger/neogit", event = "VeryLazy"}
 })
