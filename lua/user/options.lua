@@ -39,7 +39,7 @@ local options = {
   modifiable=true,
 }
 
-for k, v in pairs(options) do
+for k, v in pairs(options) do --pairs 迭代一个table
   vim.opt[k] = v
 end
 
