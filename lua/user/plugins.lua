@@ -14,7 +14,6 @@ local lazy = require "lazy"
 lazy.setup({
    { "nvim-lua/plenary.nvim" , event = "VeryLazy"} -- ,ful lua functions ,d by lots of plugins
   , { "windwp/nvim-autopairs", event = "VeryLazy"} -- Autopairs, integrates with both cmp and treesitter
-  , { "numToStr/Comment.nvim", event = "VeryLazy" }
   , { "JoosepAlviste/nvim-ts-context-commentstring" , event = "VeryLazy"}
   , { "kyazdani42/nvim-web-devicons" , event = "VeryLazy"}
   , { "kyazdani42/nvim-tree.lua"}
@@ -89,5 +88,16 @@ lazy.setup({
         dependencies = { { "nvim-lua/plenary.nvim" } },
      event = "VeryLazy"},
   {"TimUntersberger/neogit", event = "VeryLazy"},
-  {"mrjones2014/legendary.nvim", event = "VeryLazy"}
+  {"mrjones2014/legendary.nvim", event = "VeryLazy"},
+  {'numToStr/Comment.nvim',event="VeryLazy",
+  init= function ()
+    require('Comment').setup()
+  end
+  },
+  {'nguyenvukhang/nvim-toggler',
+  opt={
+init=function()
+require('nvim-toggler').setup()
+end
+    },}
 })

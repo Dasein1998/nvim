@@ -20,5 +20,6 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.obsidian"
+require "user.legendary"
 require('leap').add_default_mappings()
 require("oil").setup()
