@@ -23,3 +23,4 @@ require "user.obsidian"
 require "user.legendary"
 require('leap').add_default_mappings()
 require("oil").setup()
+require('nvim-toggler').setup()
