@@ -39,13 +39,13 @@ lazy.setup(
         {'folke/tokyonight.nvim', event = 'VeryLazy'},
         {'lunarvim/darkplus.nvim', event = 'VeryLazy'},
         -- Cmp https://github.com/hrsh7th/nvim-cmp
-        {'hrsh7th/nvim-cmp', event = 'VeryLazy'}, -- The completion plugin
+        {'hrsh7th/nvim-cmp'}, -- The completion plugin
         {'hrsh7th/cmp-buffer', event = 'VeryLazy'}, -- buffer completions
         {'hrsh7th/cmp-path', event = 'VeryLazy'}, -- path completions
         {'saadparwaiz1/cmp_luasnip', event = 'VeryLazy'}, -- snippet completions
         {'hrsh7th/cmp-nvim-lsp', event = 'VeryLazy'},
         {'hrsh7th/cmp-nvim-lua', event = 'VeryLazy'},
-        {'hrsh7th/cmp-cmdline', event = 'VeryLazy'},
+        {'hrsh7th/cmp-cmdline'},
         {'nvim-telescope/telescope-fzf-native.nvim', event = 'VeryLazy', build = 'make'},
         {'tzachar/cmp-fuzzy-buffer', dependencies = {'hrsh7th/nvim-cmp', 'tzachar/fuzzy.nvim'}},
         -- Snippets

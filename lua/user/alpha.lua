@@ -21,6 +21,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
   dashboard.button("o", "Obsidian",":ObsidianSearch <CR>"),
+  dashboard.button("d", "Obsidian today",":ObsidianToday <CR>"),
 }
 
 local function footer()
