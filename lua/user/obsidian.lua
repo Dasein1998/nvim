@@ -8,10 +8,3 @@ require("obsidian").setup({
   },
   notes_subdir = "001-pages",
 })
-require("nvim-tree").setup({
-  ensure_installed = { "markdown", "markdown_inline", ... },
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = { "markdown" },
-  },
-})
