@@ -26,7 +26,7 @@ lazy.setup(
         {'akinsho/toggleterm.nvim', event = 'VeryLazy'},
         {'ahmedkhalf/project.nvim', event = 'VeryLazy'},
         {'lewis6991/impatient.nvim', event = 'VeryLazy'},
-        {'lukas-reineke/indent-blankline.nvim', event = 'VeryLazy'},
+        {'lukas-reineke/indent-blankline.nvim',  main = "ibl",opts = {},event = 'VeryLazy'},
         {'goolord/alpha-nvim'},
         {
             'folke/which-key.nvim',
@@ -67,30 +67,9 @@ lazy.setup(
         -- dasein
         {'simrat39/symbols-outline.nvim', event = 'VeryLazy'},
         {'dstein64/vim-startuptime', event = 'VeryLazy'},
-        {'epwalsh/obsidian.nvim', event = 'VeryLazy'},
         {'lervag/vimtex', event = 'VeryLazy'},
         {'ggandor/leap.nvim', event = 'VeryLazy'},
         {'stevearc/oil.nvim', event = 'VeryLazy'},
-        {
-            'nvim-neorg/neorg',
-            build = ':Neorg sync-parsers',
-            opts = {
-                load = {
-                    ['core.defaults'] = {}, -- Loads default behaviour
-                    ['core.norg.concealer'] = {}, -- Adds pretty icons to your documents
-                    ['core.norg.dirman'] = {
-                        -- Manages Neorg workspaces
-                        config = {
-                            workspaces = {
-                                notes = '~/notes'
-                            }
-                        }
-                    }
-                }
-            },
-            dependencies = {{'nvim-lua/plenary.nvim'}},
-            event = 'VeryLazy'
-        },
         {'TimUntersberger/neogit', event = 'VeryLazy'},
          --https://github.com/TimUntersberger/neogit
         {'mrjones2014/legendary.nvim', event = 'VeryLazy'},

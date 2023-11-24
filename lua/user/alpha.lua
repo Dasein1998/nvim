@@ -20,8 +20,8 @@ dashboard.section.buttons.val = {
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-  dashboard.button("o", "Obsidian",":ObsidianSearch <CR>"),
-  dashboard.button("d", "Obsidian today",":ObsidianToday <CR>"),
+ -- dashboard.button("o", "Obsidian",":ObsidianSearch <CR>"),
+ -- dashboard.button("d", "Obsidian today",":ObsidianToday <CR>"),
 }
 
 local function footer()
@@ -30,7 +30,7 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "chrisatmachine.com"
+	return "dasein.site"
 end
 
 dashboard.section.footer.val = footer()
