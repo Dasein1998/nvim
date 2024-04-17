@@ -46,7 +46,7 @@ lazy.setup(
         {'hrsh7th/cmp-nvim-lsp', event = 'VeryLazy'},
         {'hrsh7th/cmp-nvim-lua', event = 'VeryLazy'},
         {'hrsh7th/cmp-cmdline'},
-        {'nvim-telescope/telescope-fzf-native.nvim', event = 'VeryLazy', build = 'make'},
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         {'tzachar/cmp-fuzzy-buffer', dependencies = {'hrsh7th/nvim-cmp', 'tzachar/fuzzy.nvim'}},
         -- Snippets
         {'L3MON4D3/LuaSnip', event = 'VeryLazy'}, --snippet engine
