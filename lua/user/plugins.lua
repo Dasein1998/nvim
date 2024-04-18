@@ -18,8 +18,18 @@ lazy.setup(
         {'nvim-lua/plenary.nvim', event = 'VeryLazy'}, -- ,ful lua functions ,d by lots of plugins
         {'windwp/nvim-autopairs', event = 'VeryLazy'}, -- Autopairs, integrates with both cmp and treesitter
         {'JoosepAlviste/nvim-ts-context-commentstring', event = 'VeryLazy'},
-        {'kyazdani42/nvim-web-devicons', event = 'VeryLazy'},
-        {'kyazdani42/nvim-tree.lua'},
+        {'kyazdani42/nvim-web-devicons'},
+        {'kyazdani42/nvim-tree.lua',lazy = false},
+        {
+            "nvim-neo-tree/neo-tree.nvim",
+            branch = "v3.x",
+            dependencies = {
+              "nvim-lua/plenary.nvim",
+              "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+              "MunifTanjim/nui.nvim",
+              -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+            }
+        },
         {'akinsho/bufferline.nvim', event = 'VeryLazy'},
         {'moll/vim-bbye', event = 'VeryLazy'},
         {'nvim-lualine/lualine.nvim', event = 'VeryLazy'},
@@ -28,13 +38,11 @@ lazy.setup(
         {'lewis6991/impatient.nvim', event = 'VeryLazy'},
         {'lukas-reineke/indent-blankline.nvim',  main = "ibl",opts = {},event = 'VeryLazy'},
         {'goolord/alpha-nvim'},
-        {
-            'folke/which-key.nvim',
+        {'folke/which-key.nvim',
             config = function()
                 vim.o.timeout = true
                 vim.o.timeoutlen = 600
-            end
-        },
+            end},
         -- Colorschemes
         {'folke/tokyonight.nvim', event = 'VeryLazy'},
         {'lunarvim/darkplus.nvim', event = 'VeryLazy'},
@@ -56,7 +64,7 @@ lazy.setup(
         {'williamboman/mason.nvim', event = 'VeryLazy'},
          -- simple to , language server installer
         {'williamboman/mason-lspconfig.nvim', event = 'VeryLazy'},
-        {'jose-elias-alvarez/null-ls.nvim', event = 'VeryLazy'}, -- for formatters and linters
+        --{'jose-elias-alvarez/-ls.nvim', event = 'VeryLazy'}, -- for formatters and linters
         {'RRethy/vim-illuminate', event = 'VeryLazy'},
         -- Telescope
         {'nvim-telescope/telescope.nvim', event = 'VeryLazy'},
@@ -82,11 +90,6 @@ lazy.setup(
             end
         },
          --https://github.com/numToStr/Comment.nvim
-        {
-            'nguyenvukhang/nvim-toggler',
-            event = 'VeryLazy'
-        }
-         --https://github.com/nguyenvukhang/nvim-toggler
-        -- {'gelguy/wilder.nvim',event="VeryLazy", },--https://github.com/gelguy/wilder.nvim
+        
     }
 )

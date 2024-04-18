@@ -9,7 +9,7 @@ require "user.gitsigns"
 require "user.treesitter"
 require "user.autopairs"
 require "user.comment"
-require "user.nvim-tree"
+--require "user.nvim-tree"
 require "user.bufferline"
 require "user.lualine"
 require "user.toggleterm"
@@ -22,4 +22,4 @@ require "user.autocommands"
 require "user.legendary"
 require('leap').add_default_mappings()
 require("oil").setup()
-require('nvim-toggler').setup()
+--require('nvim-toggler').setup()
